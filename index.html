@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+    <title>מחולל סידור עבודה - טיסות - EL AL</title>
+<html><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
+    <style type="text/css">
+    * {
+        font-family: 'Alef', sans-serif;
+    }
+    body {
+    background-image: url("bg1.png");
+    }
+
+    .red-color {
+        background: #00bcd4 !important;
+        color: white;
+    }
+	
+	.blue-color {
+        background: white !important;
+        color: white;
+    }
+
+    .black-color {
+        background: rgb(0, 0, 0) !important;
+        color: white;
+    }
+	
+    input:focus,
+    textarea:focus {
+        outline: none !important;
+        border-color: Cyan;
+    }
+
+    .with-logo {
+        background-image: url('logo.png') !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
+
+    .with-logo1 {
+        background-image: url('logo1.png') !important;
+        background-repeat: no-repeat !important;
+        background-position: bottom 200px right 150px !important;
+    }
+    </style>
+</head>
+
+<body dir="rtl">
+    <div class="w3-container w3-display-middle with-logo2">
+        <div class="w3-card-4">
+            <header class="w3-container w3-center red-color">               
+                <br>
+                <br>
+                <h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>
+                <br>
+                <br>
+                <br><img src="logo1.png" class="w3-round w3-padding" alt="Alps"></h1>
+                <h2>מחולל קטגוריית ספורט ובריאות!</h2>
+                <p class="w3-meduium">
+                    ברוכים הבאים למחולל המועמדים של קטגוריית ספורט ובריאות!
+                    כל מה שתצטרכו זה למלא את הפרטים למטה,
+                    <br>
+                    והכלי ידאג לספק לכם קוד אותו תדביקו באשכול החדש שאתם יוצרים! שנתחיל?
+                    <br>
+                    במקומות הבאים תשתמשו באלה: ✔️❌
+                </p>
+            </header>
+            <div class="w3-container w3-padding-16 w3-white">
+                <textarea class="w3-input" id="content" rows="1" cols="80" placeholder="פרופיל: "></textarea>
+                <br>
+				<textarea class="w3-input" id="content1" rows="1" cols="80" placeholder="יעלה לפורום + היפר קישור לפורום:"></textarea>
+				<br>
+				<textarea class="w3-input" id="content2" rows="1" cols="80" placeholder="השקעה שבועית (מספר):"></textarea>
+				<br>
+				<textarea class="w3-input" id="content3" rows="1" cols="80" placeholder="השקעה דו שבועית (מספר):"></textarea>
+				<br>
+				<textarea class="w3-input" id="content4" rows="1" cols="80" placeholder="השקעה חודשית (מספר):"></textarea>
+				<br>
+                <textarea class="w3-input" id="content5" rows="1" cols="80" placeholder="כמות האשכולות שנפתחים בשבוע בפורום:"></textarea>
+                <br>
+                <textarea class="w3-input" id="content6" rows="1" cols="80" placeholder="וותק של חודשיים באתר"></textarea>
+                <br>
+                <textarea class="w3-input" id="content7" rows="1" cols="80" placeholder="400 הודעות"></textarea>
+                <br>
+                <textarea class="w3-input" id="content8" rows="1" cols="80" placeholder="הערות (תפקידי עבר)/א+:"></textarea>
+                <br>
+                <textarea class="w3-input" id="content9" rows="1" cols="80" placeholder="האם יש לו אזהרה פעילה"></textarea>
+				<br>
+                <textarea class="w3-input" id="output" rows="1" cols="80" dir="ltr" readonly=""></textarea>
+                <br>
+                <button class="w3-button w3-block black-color" id="buildBtn">יצירת מועמד</button>
+                <br>
+                <button class="w3-button w3-block black-color" id="copyBtn" disabled="">העתקת מועמד</button>
+				<br>
+				<button class="w3-button w3-block black-color" id="openBtn" onclick="window.open('https://www.fxp.co.il/newthread.php?do=newthread&f=7126', '_blank');">פרסום מועמד</button>
+				<br>
+                <button class="w3-button w3-block black-color" id="formatBtn">אפס טופס</button>
+                <br>
+                <center><div id="footer">
+                    <header class="w3-container w3-center blue-color with-logo">
+                                    <h1>.</h1>
+                                </header>
+                    
+                    <span style="font-weight:bold; color:#000000">נבנה ב<span style="color: #006699">❤</span> על ידי <a href="https://www.fxp.co.il/member.php?u=1033928">עודד - Super Oded</a></span>
+            </div>
+        </div>
+    </div><br>
+			<a href="http://www.reliablecounter.com" target="_blank"></a><br><a href="http://" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;"></a>
+		</div></center><script type="text/javascript">
+    const build = (content, content1, content2, content3, content4, content5, content6, content7, content8, content9, srcUrl) => `
+
+[CENTER][SIZE=2][COLOR=#333333][FONT=open sans hebrewl][/FONT][/COLOR][/SIZE][COLOR=#333333][FONT=open sans hebrew][TABLE="class: cms_table_grid, width: 500, align: center"]
+[TR]
+[TD="bgcolor: #ff5050"][FONT=open sans hebrew][SIZE=2][B]פרופיל[/B][/SIZE][/FONT][/TD]
+[TD][SIZE=2][FONT=open sans hebrew]${content}[/FONT][/SIZE][/TD]
+[/TR]
+[TR]
+[TD="bgcolor: #ff5050"][SIZE=2][FONT=open sans hebrew][B]יעלה לפורום + היפר קישור לפורום[/B][/FONT][/SIZE][/TD]
+[TD][SIZE=2]${content1}[/SIZE][/TD]
+[/TR]
+[/TABLE]
+[/FONT][/COLOR][SIZE=2][COLOR=#333333][FONT=open sans hebrew]
+[/FONT][/COLOR][/SIZE][COLOR=#333333][FONT=open sans hebrew][TABLE="class: cms_table_grid, width: 700, align: center"]
+[TR]
+[TD][SIZE=2][FONT=open sans hebrew][B]השקעה[/B]
+יש לבדוק שהמנהל עם השקעה חודשית.
+[/FONT]✔️❌[/SIZE][/TD]
+[TD][SIZE=2][FONT=open sans hebrew]שבועי: ${content2}
+דו: ${content3}
+חודשי: ${content4}[/FONT][/SIZE][/TD]
+[/TR]
+[TR]
+[TD="bgcolor: #ff5050"][SIZE=2][FONT=open sans hebrew][B]כמות האשכולות שנפתחים בשבוע בפורום[/B][/FONT][/SIZE][/TD]
+[TD][SIZE=2]${content5}[/SIZE][/TD]
+[/TR]
+[TR]
+[TD="bgcolor: #ff5050"][SIZE=2][B][FONT=open sans hebrew]וותק של חודשיים באתר[/FONT][/B][/SIZE][/TD]
+[TD][SIZE=2][FONT=open sans hebrew]${content6}[/FONT][/SIZE][/TD]
+[/TR]
+[TR]
+[TD="bgcolor: #ff5050"][SIZE=2][B][FONT=open sans hebrew]400 הודעות[/FONT][/B][/SIZE][/TD]
+[TD][SIZE=2][FONT=open sans hebrew]${content7}[/FONT][/SIZE][/TD]
+[/TR]
+[TR]
+[TD="bgcolor: #ff5050"][SIZE=2][FONT=open sans hebrew][B]הערות (תפקידי עבר וכו')/א+[/B][/FONT][/SIZE][/TD]
+[TD][SIZE=2][FONT=open sans hebrew]${content8}[/FONT][/SIZE][/TD]
+[/TR]
+[TR]
+[TD="bgcolor: #ff5050"][SIZE=2][B][FONT=open sans hebrew]האם יש לו אזהרה פעילה[/FONT][/B][/SIZE][/TD]
+[TD][SIZE=2][FONT=open sans hebrew]${content9}[/FONT][/SIZE][/TD]
+[/TR]
+[/TABLE]
+[/FONT][/COLOR][/CENTER]
+
+[CENTER][B][taguser]1033928[/taguser][/B][/CENTER]`.trim();
+
+    $(document).ready(function() {
+        $('#buildBtn').click(function() {
+            $('#output').val(build($('#content').val(), $('#content1').val(), $('#content2').val(), $('#content3').val(), $('#content4').val(), $('#content5').val(), $('#content6').val(), $('#content7').val(), $('#content8').val(), $('#content9').val(), $('#url').val()));
+            $('#copyBtn').removeAttr('disabled');
+        });
+
+        $('#copyBtn').click(function() {
+            $('#output').select();
+            document.execCommand("copy");
+        });
+
+        $('#formatBtn').click(function() {
+            $('#output, #content, #content1, #content2, #content3, #content4, #content5, #content6, #content7, #content8, #content9, #url').val('');
+        });
+    });
+    </script>
+
+</html>
